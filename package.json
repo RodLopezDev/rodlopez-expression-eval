@@ -1,7 +1,12 @@
 {
   "name": "@rodlopez/expression-eval",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.2.1",
+  "description": "Lib to evaluate math expressions",
+  "keywords": [
+    "math",
+    "formula",
+    "expression-eval"
+  ],
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
@@ -9,7 +14,8 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "author": "RatherLabsRodLopez",
+  "repository": "RodLopezDev/rodlopez-expression-eval",
+  "author": "RodLopez",
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.2.0",
@@ -23,6 +29,7 @@
     "rollup": "^3.14.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-url": "^3.0.1",
     "typescript": "^4.9.5"
@@ -37,8 +44,5 @@
     "node": ">=16",
     "npm": ">=8"
   },
-  "type": "module",
-  "dependencies": {
-    "rollup-plugin-peer-deps-external": "^2.2.4"
-  }
+  "type": "module"
 }
