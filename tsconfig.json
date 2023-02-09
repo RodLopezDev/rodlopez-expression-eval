@@ -23,5 +23,5 @@
     "typeRoots": ["node_modules/@types"]
   },
   "include": ["src"],
-  "exclude": ["build", "dist", "example", "rollup.config.js"]
+  "exclude": ["build", "dist", "rollup.config.js"]
 }
